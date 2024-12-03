@@ -1,0 +1,248 @@
+/* GENERAL PAGE STYLING GOES HERE */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Soft neutral background */
+    color: #333; /* Darker text for contrast */
+    line-height: 1.6;
+}
+
+/* LOGO AREA STYLING */
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
+}
+
+header .logo h2 {
+    margin: 0; /* Remove default margins */
+    font-size: 1.8rem; /* Ensure consistent size */
+    color: #004085; /* Match header color */
+    font-weight: 700; /* Bold styling */
+}
+
+
+/* HEADER SECTION GOES HERE */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cce7ff; /* Pastel blue */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 80px; /* Explicit height for consistency */
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #004085; /* Slightly darker blue for better contrast */
+    font-size: 1.8rem;
+}
+
+/*this is for nav bar image*/
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add space between the name and image */
+}
+
+header .logo .navbar-image {
+    width: 40px; /* Adjust to a more reasonable size */
+    height: 40px; /* Keep the height proportional */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image fills the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    margin-left: 10px; /* Space between the name and image */
+}
+
+
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem 1rem; /* Add consistent spacing for clickable area */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #004085; /* Match logo color on hover */
+}
+
+
+
+
+
+/* HERO SECTION GOES HERE */
+#hero {
+    text-align: center;
+    background-color: #e8f5e9; /* Pastel green */
+    padding: 3rem 1rem;
+    border-bottom: 4px solid #cce7ff; /* Tie in header color */
+}
+
+#hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle depth */
+}
+
+#hero h2 {
+    color: #444;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffe0e6; /* Pastel pink */
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#hero .cta-button:hover {
+    background-color: #ffccd5; /* Slightly darker pink for hover effect */
+    color: #222;
+}
+
+
+
+
+
+/* MAIN SECTIONS */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+main section {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Pop-out effect */
+}
+
+main section h3 {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+main section p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+main section a {
+    color: #004085; /* Match header color */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+
+main section a:hover {
+    color: #0077b6; /* Slightly brighter for hover effect */
+}
+
+/* FOOTER SECTION GOES HERE */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffe0e6; /* Pastel pink */
+    color: #333;
+    margin-top: 2rem;
+    border-top: 4px solid #cce7ff; /* Match header and hero */
+}
+
+footer .social-links {
+    margin-bottom: 1rem;
+}
+
+footer .social-links a {
+    margin: 0 0.8rem;
+    text-decoration: none;
+    color: #004085;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #0077b6; /* Brighter blue for hover effect */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Allow header to adjust to content */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%; /* Make links span full width */
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        display: block; /* Ensure full-width clickable links */
+    }
+
+    #hero img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* GLOBAL RESET AND CONSISTENCY */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
